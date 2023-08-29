@@ -1,12 +1,66 @@
-<!DOCTYPE html>
-
 <html>
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		body{
+			background-color: rgb(204, 204, 204)
+		}
+		h1,h2{
+			text-align:center
+		}
+		.player_one{
+			width:100%;
+			height:125px;
+			border:1px solid black;
+			background-color:white;
+			border-radius:10px
+		}
+		li{
+			list-style-type: none;
+		}
+		a{
+			text-decoration-line: none;
+		}
+		.player_two{
+			width:100%;
+			height:100%;
+			border:1px solid black;
+			background-color:white;
+			border-radius:10px;
+			padding:10px;
+			margin-left:20px;
+			margin-right:20px;
+		}
+	</style>
 </head>
 
 <body>
+	<h1>My Playlist</h1>
+	<div class="player_one">
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=80Ukj9Y2LRQ" target="_blank">Song 1</a></li>
+			<li><a href="https://www.youtube.com/watch?v=EiMX1G8pnYA" target="_blank">Song 2</a></li>
+			<li><a href="https://www.youtube.com/watch?v=V5En3Ks3OjE" target="_blank">Song 3</a></li>
+			<li><a href="https://www.youtube.com/watch?v=-uqc-GiXIzQ" target="_blank">Song 4</a></li>
+			<li><a href="https://www.youtube.com/watch?v=FeA4PcgeShQ" target="_blank">Song 5</a></li>
+		</ul>
+	</div>
+	<h2>Now Playing...</h2>
+	<div class="player_two">
+	<div class="video1">
+		<video width="100%" height="100%"controls>	
+			<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+		</video>
+	</div>
+	<h2>MP3 songs</h2>
+	<p>Maan Meri Jaan</p>
+	<div>
+		<audio width=100% controls>
+			<source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+		</audio>
+	</div>
+	</div>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
